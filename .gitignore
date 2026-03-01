@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Anchor / Solana
+.anchor/
+target/
+test-ledger/
+**/*.rs.bk
+
+# Environment / keys (do not commit keypairs)
+*.keypair.json
+.env
+.env.local
+
+# OS
+.DS_Store
+.yarn/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

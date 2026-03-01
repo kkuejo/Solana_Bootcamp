@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+mycalculatordapp = "5GVm24BPotKvyU5f4GESEHHignTNxsHpJu2gHJ1xvye7"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[test]
+startup_wait = 15000
+
+[scripts]
+test = "yarn jest --verbose"
